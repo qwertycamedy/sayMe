@@ -1,0 +1,37 @@
+.vision {
+  min-height: 100vh;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  &__img {
+    max-width: 51.9rem;
+    width: 100%;
+  }
+
+  &__info {
+    max-width: 51.1rem;
+    color: var(--dark);
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    br {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 130%;
+    margin-bottom: 5rem;
+  }
+
+  &__link {
+    max-width: 28rem;
+  }
+}

@@ -1,0 +1,13 @@
+
+:root {
+  // base
+
+  --ff: "Inter", sans-serif;
+  --content-width: 118rem;
+  --container-offset: 2rem;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --light: #fff;
+  --dark: #000;
+  --pink: #C420DE;
+}

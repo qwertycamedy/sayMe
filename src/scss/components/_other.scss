@@ -1,0 +1,169 @@
+.logo {
+  img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 120%;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: unset;
+  border: unset;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  img {
+    max-width: unset;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &-ellipse {
+    width: 47px;
+    height: 47px;
+    background: var(--pink);
+    border-radius: 50%;
+
+    img {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &-rect {
+    height: 6rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 130%;
+    padding: 0 15px;
+  }
+
+  &-grad {
+    color: var(--light);
+    background: linear-gradient(180deg, #7036ce 0%, #e62497 100%), #c420de;
+  }
+
+  &-dark {
+    background: var(--dark);
+    color: var(--light);
+  }
+}
+
+.link {
+  text-decoration: underline transparent;
+  transition: text-decoration 0.2s linear;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline currentColor;
+    }
+  }
+
+  &-underline {
+    text-decoration: underline currentColor;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline transparent;
+      }
+    }
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.withHeart {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 120%;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0 0 5rem;
+  img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.bg {
+  &-grad {
+    background-image: url(../img/bg-grad.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.penone {
+  pointer-events: none;
+}
+
+.flex {
+  display: flex;
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ai {
+  &c {
+    align-items: center;
+  }
+
+  &fs {
+    align-items: flex-start;
+  }
+
+  &fe {
+    align-items: flex-end;
+  }
+}
+
+.jc {
+  &fs {
+    justify-content: flex-start;
+  }
+
+  &c {
+    justify-content: center;
+  }
+
+  &fe {
+    justify-content: flex-end;
+  }
+}
+
+.gap {
+  &5 {
+    gap: 5px;
+  }
+}

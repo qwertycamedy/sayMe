@@ -1,0 +1,21 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "./components/other";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/Q&A";
+@import "./components/hero";
+@import "./components/secHero";
+@import "./components/safe-more";
+@import "./components/text-section";
+@import "./components/vision";
+@import "./components/safe";
+@import "./components/review";
+@import "./components/faq";
+@import "./components/footer";
+@import "./components/media";
+@import "./components/keyframes";

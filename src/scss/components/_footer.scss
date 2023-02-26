@@ -1,0 +1,40 @@
+.footer {
+  transform: rotate(180deg);
+  background-position:  center;
+  &__inner {
+    transform: rotate(180deg);
+    padding: 12rem 0 3rem
+  }
+  &__info {
+    margin-bottom: 13.9rem;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    justify-content: center;
+  }
+  &__logo {
+    width: 38rem;
+  }
+
+  &__link {
+    &-outer {
+      display: flex;
+      align-items: center;
+      gap: 3.1rem;
+    }
+
+    width: 21rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    &-link {
+      font-weight: 600;
+      font-size: 16px;
+      color: rgba(#fff, .7);
+    }
+  }
+}

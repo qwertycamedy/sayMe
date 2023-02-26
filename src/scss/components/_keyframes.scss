@@ -1,0 +1,29 @@
+@keyframes hide {
+  0% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: .3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hide {
+  animation: hide .2s alternate linear;
+  display: none;
+}
+
+.show {
+  animation: show .2s alternate linear;
+  display: flex;
+}

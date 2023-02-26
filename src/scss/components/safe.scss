@@ -1,0 +1,51 @@
+.safe {
+  min-height: 100vh;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
+  &__img {
+    max-width: 62.4rem;
+    width: 100%;
+  }
+
+  &__info {
+    max-width: 58rem;
+    color: var(--dark);
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin-bottom: 3.5rem;
+    line-height: 120%;
+
+    & span {
+      &:first-of-type {
+        color: #C420DE;
+      }
+
+      &:last-of-type {
+        color: #7536CC;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 130%;
+    margin-bottom: 5rem;
+  }
+
+  &__link {
+    max-width: 28rem;
+  }
+}

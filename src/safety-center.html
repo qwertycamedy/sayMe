@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+
+      <main class="main">
+        <section class="secHero safe-hero bg-grad">
+          <div class="container">
+            <div class="secHero__inner">
+              <h1 class="secHero__title title">Safety <br/> Center</h1>
+              <div class="secHero__img-outer">
+                <img
+                  class="secHero__img"
+                  loading="lazy"
+                  src="img/safety-center-img.png"
+                  width=""
+                  height=""
+                  alt="img"
+                />
+                <img
+                  class="secHero__img-lock"
+                  loading="lazy"
+                  src="img/safety-center-lock.svg"
+                  width=""
+                  height=""
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      @include('partials/safe-more.html')
+      </main>
+
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

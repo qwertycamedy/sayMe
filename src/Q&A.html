@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <main class="main bg-grad">
+      <section class="QandA">
+        <div class="container">
+          <form class="QandA__inner">
+            <img class="QandA__img" loading="lazy" src="img/logo.svg" width="206" height="246" alt="img">
+            <div id="QandAAreaOuter" class="QandA__area-outer">
+              <div class="QandA__user">
+                <img class="QandA__user-img" loading="lazy" src="img/user.png" width="70" height="70" alt="img">
+                <div class="QandA__user-info">
+                  <div class="QandA__user-suptitle">@example</div>
+                  <h3 class="QandA__user-title">Send me anonymous messages!</h3>
+                </div>
+              </div>
+              <div class="QandA__area">
+                <textarea id="QandAArea" class="textarea" cols="30" rows="10" placeholder="Send me anonymous message..."></textarea>
+                <button class="QandA__area-btn btn btn-ellipse">
+                  <img class="btn-img" loading="lazy" src="img/dices.svg" width="26" height="26" alt="img">
+                </button>
+              </div>
+            </div>
+            <div class="QandA__sent hide" id="QandASent">
+              <img class="QandA__sent-img" src="img/sent.svg" alt="sent">
+              <a href="Q&A.html" id="QandAAnother" class="QandA__sent-link link link-underline btn-reset">
+                Send another message
+              </a>
+            </div>
+            <p id="QandAAnon" class="QandA__lock text flex aic gap5">
+              <img class="img" loading="lazy" src="img/lock.svg" width="16" height="16" alt="img">
+              Anonymous question & answer
+            </p>
+            <button id="QandASend" class="QandA__btn QandA__send btn btn-rect btn-dark hide">
+              SEND
+            </button>
+            <a id="QandAOwn" href="#" class="QandA__btn QandA__own btn btn-rect btn-dark">
+              Get your own messages
+            </a>
+            <p id="QandAPeople" class="QandA__people text">
+              <span>123</span>
+              people just click on the button</p>
+          </form>
+        </div>
+
+        <div class="QandA__right-outer">
+          <a href="#" class="QandA__right link">Terms</a>
+          <a href="#" class="QandA__right link">Privacy</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

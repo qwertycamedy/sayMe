@@ -1,0 +1,98 @@
+.faq {
+  min-height: 100vh;
+  &__inner {
+    min-height: 100vh;
+    padding: 12rem 0;
+    max-width: 118rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  background-image: url(../img/faq-bg.svg) !important;
+  &__img {
+    width: 19.4rem;
+    position: absolute;
+    z-index: -1;
+    top: 9rem;
+    left: 97%;
+  }
+  &__list {
+    width: 100%;
+    max-width: 1180rem;
+    margin: 0 auto;
+    &-item {
+      background: var(--light);
+      border-radius: 5rem;
+      padding: 3rem 0;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &.active {
+        .faq__list-btn {
+          color: #C420DE;
+          margin-bottom: 2rem;
+          img {
+            transform: rotate(-45deg);
+          }
+        }
+
+        .faq__list-content {
+          opacity: 1;
+        }
+      }
+    }
+    &-btn {
+      cursor: pointer;
+      border: unset;
+      background: unset;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0 3rem 0 4rem;
+      font-weight: 600;
+      font-size: 2.6rem;
+      line-height: 120%;
+      text-align: left;
+      color: var(--dark);
+      transition: color .2s linear, margin .2s linear;
+      img {
+        width: 2.3rem;
+        transition: transform .2s linear;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0 4rem;
+      transition: padding .2s linear;
+      max-height: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: max-height .2s linear, opacity .2s linear;
+      &-item {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 130%;
+        color: #4D4D4D;
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        br {
+          display: none;
+        }
+        > img {
+          height: 2.6rem;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
